@@ -6,6 +6,8 @@ import lombok.RequiredArgsConstructor;
 import org.springframework.boot.CommandLineRunner;
 import org.springframework.stereotype.Component;
 
+import java.util.Scanner;
+
 @Component
 @RequiredArgsConstructor
 public class DataLoader implements CommandLineRunner {
@@ -60,6 +62,8 @@ public class DataLoader implements CommandLineRunner {
         System.out.println(volcanoService.findFirstByIdAndIsActiveTrue(1L));
         System.out.println(volcanoService.findFirstByIdAndIsActiveTrue(4L));
 
+        var sc = new Scanner(System.in);
+        sc.nextBoolean();
 
     }
 }

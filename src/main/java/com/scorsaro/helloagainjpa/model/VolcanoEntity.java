@@ -19,6 +19,12 @@ public class VolcanoEntity {
     private Integer height;
     private Boolean isActive;
 
+    @Enumerated(EnumType.STRING)
+    private VolcanoType volcanoType;
+
+//    @Embedded
+//    private Position position;
+
 
     public VolcanoEntity(String name, Integer height, Boolean isActive) {
         this.name = name;
