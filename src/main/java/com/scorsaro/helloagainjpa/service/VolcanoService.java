@@ -55,38 +55,38 @@ public class VolcanoService {
     }
 
 
-
-    public List<VolcanoEntity> findAllTheVolcanoesThatAreActive(){
-        return volcanoRepository.findAllByIsActive(true);
-    }
-
-    public List<VolcanoEntity> findAllTheVolcanoesThatAreNotActive(){
-        return volcanoRepository.findAllByIsActive(false);
-    }
-
-    public List<VolcanoEntity> findAllVolcanoesWithMinimumHeight(Integer minimumHeight){
-        return volcanoRepository.findAllByHeightBefore(minimumHeight);
-    }
-
-    public List<VolcanoEntity> findAllActiveVolcanoesWithHeightBetween(Integer min, Integer max){
-        return volcanoRepository.findAllByIsActiveTrueAndHeightBetween(min, max);
-    }
-
-    public List<VolcanoEntity> findAllByNameContainingIgnoreCaseOrderByNameDesc(String name) {
-        return volcanoRepository.findAllByNameContainingIgnoreCaseOrderByNameDesc(name);
-    }
-
-    public List<VolcanoEntity> findByNameJPQL(String name) {
-        return volcanoRepository.findAllVolcanoesThatHaveACertainNameThatImGonnaPassYou(name);
-    }
-
-    public List<VolcanoEntity> findByNameNative(String name) {
-        return volcanoRepository.findAllVolcanoesThatHaveACertainNameThatImGonnaPassYouNative(name);
-    }
-
-    public Optional<VolcanoEntity> findFirstByIdAndIsActiveTrue(Long id) {
-        return volcanoRepository.findFirstByIdAndIsActiveTrue(id);
-    }
+//
+//    public List<VolcanoEntity> findAllTheVolcanoesThatAreActive(){
+//        return volcanoRepository.findAllByIsActive(true);
+//    }
+//
+//    public List<VolcanoEntity> findAllTheVolcanoesThatAreNotActive(){
+//        return volcanoRepository.findAllByIsActive(false);
+//    }
+//
+//    public List<VolcanoEntity> findAllVolcanoesWithMinimumHeight(Integer minimumHeight){
+//        return volcanoRepository.findAllByHeightBefore(minimumHeight);
+//    }
+//
+//    public List<VolcanoEntity> findAllActiveVolcanoesWithHeightBetween(Integer min, Integer max){
+//        return volcanoRepository.findAllByIsActiveTrueAndHeightBetween(min, max);
+//    }
+//
+//    public List<VolcanoEntity> findAllByNameContainingIgnoreCaseOrderByNameDesc(String name) {
+//        return volcanoRepository.findAllByNameContainingIgnoreCaseOrderByNameDesc(name);
+//    }
+//
+//    public List<VolcanoEntity> findByNameJPQL(String name) {
+//        return volcanoRepository.findAllVolcanoesThatHaveACertainNameThatImGonnaPassYou(name);
+//    }
+//
+//    public List<VolcanoEntity> findByNameNative(String name) {
+//        return volcanoRepository.findAllVolcanoesThatHaveACertainNameThatImGonnaPassYouNative(name);
+//    }
+//
+//    public Optional<VolcanoEntity> findFirstByIdAndIsActiveTrue(Long id) {
+//        return volcanoRepository.findFirstByIdAndIsActiveTrue(id);
+//    }
 
 
 
